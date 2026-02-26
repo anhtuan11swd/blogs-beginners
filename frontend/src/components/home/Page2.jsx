@@ -11,11 +11,11 @@ function Page2() {
     const fetchRecentBlogs = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/blogs/get-recent-blogs",
+          "http://localhost:1000/api/v1/get-all",
         );
-        setBlogs(response.data.data);
+        setBlogs(response.data);
       } catch (error) {
-        console.error("Error fetching blogs:", error);
+        console.error("Lỗi khi tải blogs:", error);
       } finally {
         setLoading(false);
       }

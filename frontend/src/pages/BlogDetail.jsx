@@ -13,11 +13,11 @@ function BlogDetail() {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://localhost:1000/api/v1/blogs/get-blog/${id}`,
+          `http://localhost:1000/api/v1/get-blog/${id}`,
         );
-        setBlog(response.data.data);
+        setBlog(response.data);
       } catch (error) {
-        console.error("Error fetching blog:", error);
+        console.error("Lỗi khi lấy bài viết:", error);
       } finally {
         setLoading(false);
       }

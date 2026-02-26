@@ -27,6 +27,9 @@
 
 .navbar .nav-link {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0.5rem 1rem;
   font-weight: 500;
   color: #475569;
@@ -37,6 +40,11 @@
 .navbar .nav-link:hover {
   color: #667eea;
   background: rgba(102, 126, 234, 0.08);
+}
+
+.navbar .nav-link:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
 }
 
 .navbar .nav-link::after {
@@ -57,6 +65,8 @@
 }
 
 .navbar-toggler {
+  min-width: 44px;
+  min-height: 44px;
   padding: 0.5rem;
   border: none;
 }
@@ -65,6 +75,17 @@
   box-shadow: none;
 }
 
+.navbar-toggler:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2871, 85, 105, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-divider {
+  margin: 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }

@@ -10,6 +10,12 @@
   text-decoration: none;
 }
 
+.blog-card-link:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+  border-radius: 20px;
+}
+
 .blog-card {
   height: 100%;
   padding: 1.75rem;
@@ -127,6 +133,7 @@
 
 .empty {
   display: inline-block;
+  min-height: 44px;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   color: white;
@@ -138,6 +145,11 @@
 .empty:hover {
   box-shadow: 0 4px 16px rgba(102, 126, 234, 0.35);
   transform: translateY(-2px);
+}
+
+.empty:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {

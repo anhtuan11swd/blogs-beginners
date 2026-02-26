@@ -40,6 +40,7 @@ function Navbar() {
             </ul>
           </div>
         </nav>
+        <hr className="navbar-divider" />
       </div>
     </nav>
   );

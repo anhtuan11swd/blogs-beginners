@@ -18,6 +18,7 @@
   display: inline-flex;
   gap: 0.5rem;
   align-items: center;
+  min-height: 44px;
   padding: 0.5rem 1rem;
   margin-bottom: 2rem;
   font-weight: 500;
@@ -29,6 +30,11 @@
 .back-link:hover {
   color: #667eea;
   background: rgba(102, 126, 234, 0.08);
+}
+
+.back-link:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
 }
 
 .back-icon {
@@ -129,6 +135,7 @@
 
 .back-btn {
   display: inline-block;
+  min-height: 44px;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   color: white;
@@ -140,6 +147,11 @@
 .back-btn:hover {
   box-shadow: 0 4px 16px rgba(102, 126, 234, 0.35);
   transform: translateY(-2px);
+}
+
+.back-btn:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,80 @@
+.write-form {
+  max-width: 800px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.blog-input,
+.blog-textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition:
+    border-color 0.3s ease,
+    border-color 0.2s ease;
+}
+
+.blog-input:focus,
+.blog-textarea:focus {
+  border-bottom-color: #667eea;
+}
+
+.blog-input:focus-visible,
+.blog-textarea:focus-visible {
+  outline: 2px solid rgba(102, 126, 234, 0.3);
+  outline-offset: 4px;
+  border-bottom-color: #667eea;
+}
+
+.blog-input {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.blog-textarea {
+  font-size: 18px;
+  resize: vertical;
+}
+
+.add-blog-btn {
+  align-self: flex-start;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.add-blog-btn:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+}
+
+.add-blog-btn:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.add-blog-btn:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+  transform: none;
+}
